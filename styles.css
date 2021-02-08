@@ -40,6 +40,51 @@ body, html{
 }
 
 .card{
-	border: 1px solid black;
-	z-index: 9;
+	position: relative;
+	z-index: 10;
+	width: 340px;
+	height: 375px;
+	background-color: #fff;
+	border-radius: 15px;
+	background-image: url('images/bg-pattern-card.svg');
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.content{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-profile img{
+	max-width: 100%;
+	border-radius: 50%;
+	border: solid 5px solid #fff;
+}
+
+.name-profile{
+	font-size: 17px;
+	font-weight: 700;
+	color: var(--dark-blue);
+	padding-top: 1rem;
+}
+
+.age-profile{
+	color: var(--dark-grayish);
+	font-weight: 400;
+	padding-left: .4rem;
+}
+
+.city-profile{
+	color: var(--dark-gray);
+	font-size: 14px;
+	font-weight: 400;
+	padding-top: .5rem;
+	margin-bottom: 1rem;
 }
